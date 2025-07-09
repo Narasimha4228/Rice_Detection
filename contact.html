@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Rice Type Detection</title>
+    <link rel="stylesheet" href="../static/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <nav>
+        <span>RICE TYPE DETECTION</span>
+        <a href="{{ url_for('home') }}">Home</a>
+        <a href="#about">About</a>
+        <a href="#testimonials">Testimonials</a>
+        <a href="{{ url_for('contact') }}" class="active">Contact</a>
+        <a href="{{ url_for('details') }}">Predict</a>
+    </nav>
+    <main>
+        <section id="contact" class="contact-section">
+            <h2 style="text-align:center; color:#388e3c; margin-bottom:0.2em;">CONTACT US</h2>
+            <div class="info-cards">
+                <div class="info-card">
+                    <div class="icon"><i class="fas fa-map-marker-alt"></i></div>
+                    <h4>Our Address</h4>
+                    <p>A108 Adam Street, Pune, India</p>
+                </div>
+                <div class="info-card">
+                    <div class="icon"><i class="fas fa-envelope"></i></div>
+                    <h4>Email Us</h4>
+                    <p>info@example.com<br>contact@example.com</p>
+                </div>
+                <div class="info-card">
+                    <div class="icon"><i class="fas fa-phone"></i></div>
+                    <h4>Call Us</h4>
+                    <p>+91 55892 55488<br>+91 66782 25444</p>
+                </div>
+            </div>
+            <form class="contact-form">
+                <div class="form-row">
+                    <input type="text" placeholder="Your Name" required>
+                    <input type="email" placeholder="Your Email" required>
+                </div>
+                <input type="text" placeholder="Subject" required>
+                <textarea placeholder="Message" rows="4" required></textarea>
+                <button type="submit" class="predict-btn" style="width:200px; margin:1.2em auto 0 auto; display:block;">Send Message</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Rice Type Detection Project</p>
+    </footer>
+</body>
+</html>

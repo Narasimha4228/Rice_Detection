@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rice Type Detection - Home</title>
+    <link rel="stylesheet" href="../static/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="hero-section" style="background: url('../static/rice_banner.jpg') center/cover no-repeat; min-height: 60vh; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+        <h1 style="color: #fff; font-size: 3em; text-shadow: 2px 2px 8px #000; margin-bottom: 0.2em;">Welcome to Rice Type Detection</h1>
+        <p style="color: #fff; font-size: 1.3em; text-shadow: 1px 1px 6px #000; margin-bottom: 1.5em;">This model can detect rice type based on rice images.</p>
+        <a href="details.html"><button class="predict-btn" style="font-size: 1.2em; padding: 0.7em 2.5em;">Predict</button></a>
+    </div>
+    <nav style="background: #111; color: #fff; padding: 0.7em 0; text-align: center; font-size: 1.1em;">
+        <span style="font-weight: bold; letter-spacing: 2px; margin-right: 2em;">RICE TYPE DETECTION</span>
+        <a href="#" style="color: #4caf50; margin: 0 1em; text-decoration: none;">Home</a>
+        <a href="#about" style="color: #fff; margin: 0 1em; text-decoration: none;">About</a>
+        <a href="#testimonials" style="color: #fff; margin: 0 1em; text-decoration: none;">Testimonials</a>
+        <a href="#contact" style="color: #fff; margin: 0 1em; text-decoration: none;">Contact</a>
+        <a href="details.html" style="color: #fff; margin: 0 1em; text-decoration: none;">Predict</a>
+    </nav>
+    <main>
+        <section class="dataset-section">
+            <h3>Dataset</h3>
+            <p>
+                The model is trained on the <a href="https://www.kaggle.com/datasets/muratkokludataset/rice-image-dataset" target="_blank">Rice Image Dataset (Kaggle)</a>.<br>
+                For best results, use the full dataset and train on Kaggle or Google Colab for GPU/TPU acceleration.
+            </p>
+        </section>
+        <section class="steps-section">
+            <h3>How it works</h3>
+            <ol>
+                <li>Click the <b>Predict</b> button above.</li>
+                <li>Upload a clear image of a rice grain.</li>
+                <li>View the predicted rice type instantly.</li>
+            </ol>
+        </section>
+        <section id="contact" class="contact-section">
+            <h2 style="text-align:center; color:#388e3c; margin-bottom:0.2em;">CONTACT US</h2>
+            <div class="info-cards">
+                <div class="info-card">
+                    <div class="icon"><i class="fas fa-map-marker-alt"></i></div>
+                    <h4>Our Address</h4>
+                    <p>A108 Adam Street, Pune, India</p>
+                </div>
+                <div class="info-card">
+                    <div class="icon"><i class="fas fa-envelope"></i></div>
+                    <h4>Email Us</h4>
+                    <p>info@example.com<br>contact@example.com</p>
+                </div>
+                <div class="info-card">
+                    <div class="icon"><i class="fas fa-phone"></i></div>
+                    <h4>Call Us</h4>
+                    <p>+91 55892 55488<br>+91 66782 25444</p>
+                </div>
+            </div>
+            <form class="contact-form">
+                <div class="form-row">
+                    <input type="text" placeholder="Your Name" required>
+                    <input type="email" placeholder="Your Email" required>
+                </div>
+                <input type="text" placeholder="Subject" required>
+                <textarea placeholder="Message" rows="4" required></textarea>
+                <button type="submit" class="predict-btn" style="width:200px; margin:1.2em auto 0 auto; display:block;">Send Message</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Rice Type Detection Project</p>
+    </footer>
+</body>
+</html>
